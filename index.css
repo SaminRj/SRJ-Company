@@ -1,21 +1,168 @@
+/* Tangerine */
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+/* Pinyon Script */
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Tangerine:wght@400;700&display=swap');
+/* Antic */
+@import url('https://fonts.googleapis.com/css2?family=Antic&family=Pinyon+Script&family=Tangerine:wght@400;700&display=swap');
+/* EB Garamond */
+@import url('https://fonts.googleapis.com/css2?family=Antic&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pinyon+Script&family=Tangerine:wght@400;700&display=swap');
+/* Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Antic&family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pinyon+Script&family=Tangerine:wght@400;700&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-header {
+.header {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, white 15%, rgb(179, 146, 103));
+    position: sticky;
+    top: 0;
 }
-.navigation li {
-    padding: 1rem;
-    text-decoration: none;
-    display: flex;
-    margin: 1rem;
-    background-color: rgb(224, 197, 162);
-    border-radius: 0.5rem;
-    text-decoration: none;
+.logoimg {
+    width: 8rem;
 }
 .navigation {
     display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.navigation li {
+    list-style: none;
+    transition: padding 1s;
+    padding: 0 0.5rem;
+}
+.navigation a {
+    text-decoration: none;
+    color: rgb(100, 50, 3);
+    font-family: "Antic", serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+.navigation li:hover {
+    text-decoration: none;
+    color: rgb(100, 50, 3);
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(148, 112, 65, 0.404), rgba(0, 0, 0, 0));
+    padding: 2rem 0.5rem;
+}
+.search {
+    display: flex;
+    gap: 0;
+}
+.search input {
+    width: 7rem;
+    border: none;
+    padding: 0.5rem;
+}
+.search input:focus {
+    width: 7rem;
+    outline: none;
+    padding: 0.5rem;
+}
+.search button {
+    border: none;
+    padding: 0.5rem;
+    background-color: rgb(184, 145, 95);
+    cursor: pointer;
+    font-family: "antic", serif;
+}
+.search button:hover {
+    border: none;
+    padding: 0.5rem;
+    background-color: rgb(143, 111, 70);
+    cursor: pointer;
+}
+#language {
+    width: 7rem;
+    border: none;
+    padding: 0.5rem;
+}
+.language {
+    font-family: "Antic", serif;
+}
+option {
+    font-family: "Antic", serif;
+}
+#language:focus {
+    width: 7rem;
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+}
+.btnlog {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.btnlog button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(163, 127, 79);
+    border: none;
+}
+.btnlog button:hover {
+    padding: 0.5rem 1rem;
+    background-color: rgb(143, 111, 70);
+    border: none;
+}
+.btnlog a {
+    text-decoration: none;
+    color: black;
+    font-family: "Antic", serif;
+}
+.maimg {
+    width: 100%;
+    height: 38rem;
+    background-image: url("./img/a.jpg");
+    background-size: cover;
+}
+h1 {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.568)50%, rgba(0, 0, 0, 0));
+    color: rgb(233, 220, 179);
+    font-size: 8rem;
+    font-family: "EB Garamond", serif;
+    font-weight: 100;
+    padding-left: 4rem;
+    padding-top: 4rem;
+}
+h1:hover {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.568)50%, rgba(0, 0, 0, 0));
+    color: rgb(233, 220, 179);
+    font-size: 8rem;
+    font-family: "EB Garamond", serif;
+    font-weight: 100;
+    padding-left: 4rem;
+    padding-top: 4rem;
+}
+.abus {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.abus h4 {
+    font-family: "EB Garamond", serif;
+    font-weight: 200;
+    font-size: 2.4rem;
+    color: rgb(109, 81, 46);
+}
+.abus p {
+    font-family: "Antic", serif;
+    font-size: 1.2rem;
+}
+.img4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+}
+.img4 img {
+    width: 24%;
 }

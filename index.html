@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SRJ Clothing & Fashion</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <!-- logo -->
       <section class="logo">
-        <a href="#"><img src="./img/logo.jpg" alt="logo" width="140" /></a>
+        <a href="#"><img src="./img/logo.jpg" alt="logo" class="logoimg" /></a>
       </section>
       <!-- end logo -->
       <!-- navigation bar -->
@@ -29,7 +29,7 @@
       <!-- end navigation bar -->
       <!-- search box -->
       <section>
-        <form>
+        <form class="search">
           <input type="search" />
           <button>search</button>
         </form>
@@ -37,7 +37,7 @@
       <!-- end search box -->
       <!-- language -->
       <section>
-        <label for="language">Language:</label>
+        <label for="language" class="language">Language:</label>
         <select name="language" id="language">
           <option value="english">English</option>
           <option value="deutsch">Deutsch</option>
@@ -54,54 +54,60 @@
           <option value="Українська">Українська</option>
         </select>
       </section>
-      <section>
+      <section class="btnlog">
         <button><a href="#">Login</a></button>
         <button><a href="#">Sign in</a></button>
       </section>
       <!-- end language -->
     </header>
-    <hr />
     <main>
       <!-- background -->
-      <section>
-        <img src="./img/a.jpg" alt="background" id="home" class="imgbackground" />
+      <section class="maimg">
+        <header>
+          <h1>
+            SRJ <br />
+            Clothing <br />
+            & Fashion
+          </h1>
+        </header>
       </section>
       <!-- end background -->
       <article>
-        <header>
-          <h1>SRJ Clothing & Fashion</h1>
-        </header>
         <!-- About Us -->
         <section>
-          <h4 id="About">About Us:</h4>
-          <p>
-            SRJ company started its activity in the field of women's clothing in
-            2024. The name of this company is derived from the name of its
-            founder, <mark> Samin Raja</mark>. From 2028, it expanded its activity in the
-            field of women's clothing and started producing men's clothing.
-            Today, this company is one of the most well-known brands in the
-            field of clothing.
-          </p>
-          <img
-            src="./img/pexels-hngstrm-1233648.jpg"
-            alt="SRJimg"
-            width="150"
-          />
-          <img
-            src="./img/pexels-frendsmans-1926769.jpg"
-            alt="SRJimg"
-            width="150"
-          />
-          <img
-            src="./img/pexels-kowalievska-1148960.jpg"
-            alt="SRJimg"
-            width="150"
-          />
-          <img
-            src="./img/pexels-tima-miroshnichenko-6764943.jpg"
-            alt="SRJimg"
-            width="150"
-          />
+          <div class="abus">
+            <h4 id="About">About Us:</h4>
+            <p>
+              SRJ company started its activity in the field of women's clothing
+              in 2024. The name of this company is derived from the name of its
+              founder, Samin Raja. From 2028, it expanded its
+              activity in the field of women's clothing and started producing
+              men's clothing. Today, this company is one of the most well-known
+              brands in the field of clothing.
+            </p>
+          </div>
+          <div class="img4">
+            <img
+              src="./img/pexels-hngstrm-1233648.jpg"
+              alt="SRJimg"
+              width="150"
+            />
+            <img
+              src="./img/pexels-frendsmans-1926769.jpg"
+              alt="SRJimg"
+              width="150"
+            />
+            <img
+              src="./img/pexels-kowalievska-1148960.jpg"
+              alt="SRJimg"
+              width="150"
+            />
+            <img
+              src="./img/pexels-tima-miroshnichenko-6764943.jpg"
+              alt="SRJimg"
+              width="150"
+            />
+          </div>
           <p>The products of this brand are available in 3 ways:</p>
           <ol>
             <li>buy from the online shop and send to all places</li>
@@ -113,237 +119,80 @@
         </section>
         <!-- end About Us -->
       </article>
-        <hr />
-        <!-- How to order the product -->
-        <article>
-          <h3 id="product">How to order the product?</h3>
-          <p>
-            Ordering clothes in this collection is done in 2 ways: <br>
-            - You can share the photo of the dress you want in the special <a href="#form1">form</a> of this section. The representatives of each city will contact you and get your measurements, then you can follow the process of sewing your clothes by contacting support. <br>
-            - You can leave your dress design to us. By providing an overview of the desired dress in <a href="#form2">form</a>, our designers will design your special dress. After the confirmation stage, they will contact you to get your measurements and you can follow the process of sewing your clothes. <br>
-            It takes one to two weeks to order each dress.
-          </p>
-        </article>
-        <!-- end How to order the product -->
-        <br>
-        <br>
-      <!-- Product form -->
-      <section>
-        <!-- form 1 -->
-     <section>
-        <fieldset>
-        <legend>Form 1(sewing order):</legend>
-        <form id="form1">
-        <fieldset>
-            <legend>Individual profile:</legend>
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <br>
-            <br>
-            <label for="surname">Surname:</label>
-            <input type="text" id="surname" required>
-            <br>
-            <br>
-            <label for="">gender:</label>
-            <br>
-            <label for="man">man</label>
-            <input type="radio" id="man" required name="gender" value="man">
-            <label for="woman">woman</label>
-            <input type="radio" id="woman" required name="gender" value="woman">
-    </fieldset>
-    <fieldset>
-        <legend>Shipping details:</legend>
-        <label for="city">your city:</label>
-        <input type="text" id="city" required>
-        <br>
-        <br>
-        <label for="address">your address:</label>
-        <input type="text" id="address" required>
-    </fieldset>
-    <fieldset>
-        <legend>Ways of communication:</legend>
-        <label for="email">your email:</label>
-        <input type="email" id="email" required>
-        <br>
-        <br>
-        <label for="tel">Your phone number:</label>
-        <input type="tel" id="tel" required>
-        <br>
-        <br>
-        <label for="telid">Your Telegram ID:</label>
-        <input type="text" id="telid">
-        <br>
-        <br>
-        <label for="pas">Your password to track the order process</label>
-        <input type="password" id="pas" required>
-    </fieldset>
-    <fieldset>
-        <legend>Your orders:</legend>
-        <label for="example">The dress you want:</label>
-        <input type="file" id="example" required>
-        <br>
-        <br>
-        <label for="details">Description:</label>
-        <input type="text" id="details">
-        <br>
-        <br>
-        <label for="color">Fabric color:</label>
-        <input type="color" id="color">
-        <br>
-        <br>
-        <label for="ate">The date of receiving the clothes until:</label>
-        <input type="date" id="ate">
-    </fieldset>
-    <button>Submit</button>
-        </form>
-    </fieldset>
-     </section>
-     <!-- end form 1 -->
-     <br>
-     <br>
-     <br>
-     <br>
-     <!-- form 2 -->
-     <section>
-        <fieldset>
-        <legend>Form 2(Custom design):</legend>
-        <form id="form2">
-            <fieldset>
-                <legend>Individual profile:</legend>
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-                <br>
-                <br>
-                <label for="surname">Surname:</label>
-                <input type="text" id="surname" required>
-                <br>
-                <br>
-                <label for="">gender:</label>
-                <br>
-                <label for="man">man</label>
-                <input type="radio" id="man" required name="gender" value="man">
-                <label for="woman">woman</label>
-                <input type="radio" id="woman" required name="gender" value="woman">
-        </fieldset>
-        <fieldset>
-            <legend>Shipping details:</legend>
-            <label for="city">your city:</label>
-            <input type="text" id="city" required>
-            <br>
-            <br>
-            <label for="address">your address:</label>
-            <input type="text" id="address" required>
-        </fieldset>
-        <fieldset>
-            <legend>Ways of communication:</legend>
-            <label for="email">your email:</label>
-            <input type="email" id="email" required>
-            <br>
-            <br>
-            <label for="tel">Your phone number:</label>
-            <input type="tel" id="tel" required>
-            <br>
-            <br>
-            <label for="telid">Your Telegram ID:</label>
-            <input type="text" id="telid">
-            <br>
-            <br>
-            <label for="pas">Your password to track the order process</label>
-            <input type="password" id="pas" required>
-        </fieldset>
-        <fieldset>
-            <legend>Your orders:</legend>
-            <label for="fabric">The desired fabric:</label>
-            <input type="text" id="fabric">
-            <br>
-            <br>
-            <label for="fc">Fabric color</label>
-            <input type="color" id="fc">
-            <br>
-            <br>
-            <label for="Collar">Collar type:</label>
-            <input type="text" id="Collar"><input type="file">
-            <br>
-            <br>
-            <label for="Sleeve">Sleeve type:</label>
-            <input type="text" id="Sleeve"><input type="file">
-            <br>
-            <br>
-            <label for="length">dress length:</label>
-            <input type="text" id="length">
-            <br>
-            <br>
-            <label for="gd">General description:</label>
-            <input type="text" id="gd">
-            <br>
-            <br>
-            <label for="Similar">Similar example:</label>
-            <input type="file" id="Similar">
-            <br>
-            <br>
-            <label for="date">The date of receiving the clothes until:</label>
-            <input type="date" id="date">
-        </fieldset>
-        <button>Submit</button>
-        </form>
-    </fieldset>
-     </section>
-     <!-- end form 2 -->
-      </section>
-      <!-- end Product form -->
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    <aside>
+      <hr />
+      <!-- How to order the product -->
+      <article>
+        <h3 id="product">How to order the product?</h3>
+        <p>
+          Ordering clothes in this collection is done in 2 ways: <br />
+          - You can share the photo of the dress you want in the special
+          <a href="#form1">form</a> of this section. The representatives of each
+          city will contact you and get your measurements, then you can follow
+          the process of sewing your clothes by contacting support. <br />
+          - You can leave your dress design to us. By providing an overview of
+          the desired dress in <a href="#form2">form</a>, our designers will
+          design your special dress. After the confirmation stage, they will
+          contact you to get your measurements and you can follow the process of
+          sewing your clothes. <br />
+          It takes one to two weeks to order each dress.
+        </p>
+      </article>
+      <!-- end How to order the product -->
+      <aside>
         <nav>
-            <h2 id="news">News:</h2>
-            <ul>
-                <li><a href="#pre">50% off for clothes Cool white dress...</a></li>
-                <li><a href="#ural">Nearing the end of White Ural coat's inventory...</a></li>
-                <li><a href="#ad5">Adding 5 colors to men's t-shirts...</a></li>
-                <li><a href="#">Hiring modeling for clothes shooting...</a></li>
-                <li><a href="#">+</a></li>
-            </ul>
+          <h2 id="news">News:</h2>
+          <ul>
+            <li><a href="#pre">50% off for clothes Cool white dress...</a></li>
+            <li>
+              <a href="#ural"
+                >Nearing the end of White Ural coat's inventory...</a
+              >
+            </li>
+            <li><a href="#ad5">Adding 5 colors to men's t-shirts...</a></li>
+            <li><a href="#">Hiring modeling for clothes shooting...</a></li>
+            <li><a href="#">+</a></li>
+          </ul>
         </nav>
-    </aside>
+      </aside>
     </main>
     <hr />
     <footer>
-        <div>
-       <fieldset id="abc">
-        <legend>Survey form</legend>
-        <label for="Survey">Share your comments and criticisms with us:</label>
-        <input type="text" id="Survey">
-        <br>
-        <br>
-        <label for="">Were you satisfied with our products?</label>
-            <br>
-            <label for="yes">yes</label>
-            <input type="radio" id="yes" required name="sati" value="yes">
-            <label for="no">no</label>
-            <input type="radio" id="no" required name="sati" value="no">
-            <br>
-            <br>
-            <label for="email">your email:</label>
-            <input type="email" id="email" required>
-            <button>Submit</button>
-            <br>
-       </fieldset>
-    </div>
-    <div>
-       <p id="con">Made by Samin Raja
-        <br>
-        Email address:saminraja8527@gmail.com
-        <br>
-        Telegram ID:saminraja
-        <br>
-        contact us:+989134605589
-        <br>
-        (Space prices created by my mind :))
-       </p>
-    </div>
+      <div>
+        <fieldset id="abc">
+          <legend>Survey form</legend>
+          <label for="Survey"
+            >Share your comments and criticisms with us:</label
+          >
+          <input type="text" id="Survey" />
+          <br />
+          <br />
+          <label for="">Were you satisfied with our products?</label>
+          <br />
+          <label for="yes">yes</label>
+          <input type="radio" id="yes" required name="sati" value="yes" />
+          <label for="no">no</label>
+          <input type="radio" id="no" required name="sati" value="no" />
+          <br />
+          <br />
+          <label for="email">your email:</label>
+          <input type="email" id="email" required />
+          <button>Submit</button>
+          <br />
+        </fieldset>
+      </div>
+      <div>
+        <p id="con">
+          Made by Samin Raja
+          <br />
+          Email address:saminraja8527@gmail.com
+          <br />
+          Telegram ID:saminraja
+          <br />
+          contact us:+989134605589
+          <br />
+          (Space prices created by my mind :))
+        </p>
+      </div>
     </footer>
   </body>
 </html>
